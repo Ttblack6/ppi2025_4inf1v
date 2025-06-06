@@ -1,7 +1,66 @@
+
 import styles from "./MyGrid.module.css";
 
 export function MyGrid() {
   return (
+    <div className={styles.container}>
+      <header className={styles.header1}>Header 1</header>
+      <header className={styles.header2}>Header 2</header>
+
+      <aside className={styles.asideLeft}>Aside Esquerdo</aside>
+      <aside className={styles.asideRight}>Aside Direito</aside>
+
+      <main className={styles.main}>
+        <div className={styles.grid}>
+          {[1, 2, 3, 4, 5, 6].map((num) => (
+            <div className={styles.card} key={num}>
+              <h2>Card {num}</h2>
+              <p>Descrição do Card {num}</p>
+            </div>
+          ))}
+        </div>
+      </main>
+
+      <footer className={styles.footer}>Rodapé</footer>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import styles from "./MyGrid.module.css";
+
+export function MyGrid() {
+  return (
+    
     <div className={styles.container}>
       <header className={styles.header1} />
       <header className={styles.header2} />
@@ -32,5 +91,6 @@ export function MyGrid() {
       </div>
       <footer className={styles.footer} />
     </div>
+  
   );
-}
+}*/
