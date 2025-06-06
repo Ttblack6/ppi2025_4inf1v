@@ -59,6 +59,15 @@
   }
 }
 
+.aside2 {
+  grid-area: aside2;
+  background-color: deeppink;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .footer {
   grid-area: footer;
   background-color: darkslateblue;
